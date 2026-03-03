@@ -16,7 +16,7 @@ client.on('messageCreate', async (message) => {
   if (message.author.bot) return;
   
   try {
-    await fetch('https://matera.app.n8n.cloud/webhook/discord-matera', {
+    await fetch('https://matera.app.n8n.cloud/webhook-test/discord-matera', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
